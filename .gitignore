@@ -1,0 +1,13 @@
+.pio
+.vscode/c_cpp_properties.json
+.vscode/launch.json
+.vscode/settings.json
+build
+managed_components
+tempIncludes
+dependencies.lock
+sdkconfig
+sdkconfig.esp32
+sdkconfig.esp32.old
+sdkconfig.esp32-s3
+sdkconfig.esp32-s3.old

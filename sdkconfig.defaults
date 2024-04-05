@@ -1,0 +1,18 @@
+# This file contains configuration changes needed for
+# the Arduino, ESP-IDF and Husarnet to run.
+# Do not edit it manually, to change defconfig use
+#
+# pio run -e <your target name> -t menuconfig
+#
+# where target name is your board name from the
+# platfomio.ini file (eg. esp32)
+
+CONFIG_AUTOSTART_ARDUINO=y
+CONFIG_FREERTOS_HZ=1000
+# CONFIG_WS2812_LED_ENABLE is not set
+CONFIG_MBEDTLS_PSK_MODES=y
+CONFIG_MBEDTLS_KEY_EXCHANGE_PSK=y
+
+CONFIG_LWIP_HOOK_IP6_ROUTE_DEFAULT=y
+CONFIG_EXAMPLE_CONNECT_IPV6=n
+CONFIG_ESP_TASK_WDT_TIMEOUT_S=10
