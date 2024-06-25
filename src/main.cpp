@@ -4,7 +4,6 @@
 #include <AsyncTCP.h>
 #include <ESPAsyncWebServer.h>
 #include "husarnet.h"
-#include <driver/gpio.h>
 
 #define HOSTNAME  "husarnet-esp32"
 #define JOIN_CODE "XXXXXXXXXXXXXX"
@@ -15,7 +14,6 @@ AsyncWebServer server(80);
 
 void setup() {
     Serial.begin(115200);
-    pinMode(LED_BUILTIN, OUTPUT);
 
     // Connect to the WiFi network
     WiFi.begin(WIFI_SSID, WIFI_PASS);
@@ -46,8 +44,5 @@ void setup() {
 void loop() {
     // Loop function is free to do other tasks as the server and
     // the Husarnet stack is running in the background
-    digitalWrite(LED_BUILTIN, HIGH);
-    delay(1000);
-    digitalWrite(LED_BUILTIN, HIGH);
     delay(1000);
 }
