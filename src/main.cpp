@@ -6,9 +6,9 @@
 #include "husarnet.h"
 
 #define HOSTNAME  "husarnet-esp32"
-#define JOIN_CODE "XXXXXXXXXXXXXX"
-#define WIFI_SSID "wifi_ssid"
-#define WIFI_PASS "wifi_pass"
+#define JOIN_CODE " fc94:b01d:1803:8dd8:b293:5c7d:7639:932a/vc9tosbd96EFcy2fpo4orV "
+#define WIFI_SSID "NETIO-LAN"
+#define WIFI_PASS "AhojLidi19"
 
 AsyncWebServer server(80);
 
